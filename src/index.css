@@ -2,39 +2,13 @@
   border: 1px solid black;
 }
 
-body {
-  height: 100vh;
-  margin: 0;
-}
-
-#navigation {
-  margin: 0;
-  padding: 0;
+#nav-bar {
+  display: flex;
+  /* flex-direction: row-reverse; */
   /* border: 1px solid black; */
 }
 
-#navigation li {
-  display: inline;
-  float: left;
-  list-style-type: none;
-}
-
-#navigation a {
-  display: block;
-  padding: 5px;
-  color: black;
-  text-decoration: none;
-}
-
-#body p {
-  text-align: center;
-}
-
-#welcome {
-  font-size: 72px;
-}
-
-footer {
-  text-align: center;
-  font-size: 10pt;
+#nav-items {
+  display: flex;
+  /* border: 1px solid black; */
 }
