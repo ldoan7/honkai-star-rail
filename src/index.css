@@ -53,9 +53,18 @@ body {
   justify-content: space-evenly;
 }
 
+.menu div {
+  text-align: center;
+  border: 1px solid black;
+}
+
 .menu p {
   font-size: 20pt;
   text-align: center;
+}
+
+#characters img, #relics img {
+  width: 50%;
 }
 
 footer {
