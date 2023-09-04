@@ -1,5 +1,9 @@
 * {
-  border: 1px solid black;
+  /* border: 1px solid black; */
+}
+
+#wrapper {
+  
 }
 
 #nav-bar {
@@ -10,5 +14,43 @@
 
 #nav-items {
   display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
   /* border: 1px solid black; */
+}
+
+#nav-items li {
+  padding: 0;
+  border: 1px solid black;
+}
+
+#nav-items a {
+  display: block;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+  /* border: 1px solid black; */
+}
+
+#title {
+  font-size: 48pt;
+  text-align: center;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-evenly;
+  /* border: 1px solid black; */
+}
+
+.menu p {
+  font-size: 20pt;
+  text-align: center;
+  /* border: 1px solid black; */
+}
+
+footer {
+  text-align: center;
+  border: 1px solid black;
 }
