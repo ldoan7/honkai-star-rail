@@ -14,7 +14,8 @@ body {
 
 #nav-bar {
   display: flex;
-  position: fixed;
+  position: sticky;
+  top: 0;
   width: 100%;
   background-color: white;
 }
@@ -44,13 +45,16 @@ body {
 }
 
 #title {
-  font-size: 48pt;
+  font-size: 2.5vw;
   text-align: center;
 }
 
 .menu {
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  column-gap: 10px;
+  /* border: 1px solid black; */
 }
 
 .menu div {
@@ -59,11 +63,10 @@ body {
 }
 
 .menu p {
-  font-size: 20pt;
-  text-align: center;
+  font-size: 1.5vw;
 }
 
-#characters img, #relics img {
+.menu img {
   width: 50%;
 }
 
