@@ -7,9 +7,18 @@ html, body {
   margin: 0;
 }
 
-body {
+#container {
   display: flex;
   flex-direction: column;
+  height: 100%;
+  margin: 0;
+}
+
+#body {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+  /* border: 1px solid black; */
 }
 
 #nav-bar {
@@ -39,11 +48,11 @@ body {
   border: 1px solid black;
 }
 
-#body {
+#main {
   display: flex;
+  flex-direction: column;
   flex: 1 0 auto;
-  align-items: center;
-  padding: 5px;
+  justify-content: center;
 }
 
 #title {
