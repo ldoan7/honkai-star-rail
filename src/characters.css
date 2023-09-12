@@ -53,7 +53,6 @@ html, body {
   flex-direction: column;
   flex: 1 0 auto;
   justify-content: center;
-  border: 1px solid black;
 }
 
 #title {
@@ -63,11 +62,11 @@ html, body {
 }
 
 .characters {
-  height: 100%;
   display: grid;
   grid-template: auto / repeat(6, 15%);
   justify-content: space-evenly;
-  row-gap: 5%;
+  row-gap: 5px;
+  padding: 5px;
   border: 1px solid black;
 }
 
@@ -80,7 +79,7 @@ html, body {
 }
 
 .characters p {
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 .characters img {
@@ -90,4 +89,5 @@ html, body {
 footer {
   margin: 0;
   text-align: center;
+  border: 1px solid black;
 }
