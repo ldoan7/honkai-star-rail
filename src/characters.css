@@ -61,13 +61,24 @@ html, body {
   text-align: center;
 }
 
+.filters {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.filters div {
+  margin: 10px;
+}
+
 .characters {
   display: grid;
   grid-template: auto / repeat(6, 15%);
   justify-content: space-evenly;
   row-gap: 5px;
   padding: 5px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 .characters div {
