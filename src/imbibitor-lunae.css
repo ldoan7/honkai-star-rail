@@ -1,10 +1,15 @@
 * {
-  /* border: 1px solid black; */
+  font-family: 'Roboto', sans-serif;
+  color: white;
 }
 
 html, body {
   height: 100%;
   margin: 0;
+}
+
+body {
+  background-color: #5152a8;
 }
 
 #container {
@@ -18,7 +23,6 @@ html, body {
   display: flex;
   flex-direction: column;
   flex: 1 0 auto;
-  /* border: 1px solid black; */
 }
 
 #nav-bar {
@@ -26,7 +30,7 @@ html, body {
   position: sticky;
   top: 0;
   width: 100%;
-  background-color: white;
+  background-color: #28297e;
 }
 
 #nav-items {
@@ -43,16 +47,19 @@ html, body {
 #nav-items a {
   display: block;
   padding: 10px;
-  color: black;
   text-decoration: none;
-  border: 1px solid black;
+}
+
+#nav-items a:hover {
+  background-color: #5a5c8d;
+  transition: background-color 75ms ease-in;
 }
 
 #main {
   display: flex;
   flex-direction: column;
   flex: 1 0 auto;
-  padding: px;
+  margin-top: 20px;
 }
 
 #title {
@@ -61,60 +68,36 @@ html, body {
   text-align: center;
 }
 
-.filters {
+.character {
   display: flex;
-  justify-content: center;
-  text-align: center;
+  border: 1px solid red;
+}
+
+.stats {
+  width: 100%;
   border: 1px solid black;
 }
 
-.filters div {
-  margin: 10px;
+.stat-bars {
+  border: 1px solid white;
 }
 
-.characters {
-  display: grid;
-  grid-template: auto / repeat(8, 12%);
-  justify-content: space-evenly;
-  row-gap: 5px;
-  padding: 5px 10px;
-  /* border: 1px solid black; */
-}
-
-@media screen and (max-width: 992px) {
-  .characters {
-    grid-template: auto / repeat(6, 15%);
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .characters {
-    grid-template: auto / repeat(4, 25%);
-  }
-}
-
-.characters div {
+.hp, .atk, .def, .speed, .taunt {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  border: 1px solid black;
+  gap: 100px;
 }
 
-.characters p {
-  /* border: 1px solid black; */
+.hp img, .atk img, .def img, .speed img, .taunt img {
+  flex: 0 1 80px;
 }
 
-.characters img {
-  width: 50%;
-}
-
-.hidden {
-  display: none;
+.bar {
+  width: 500px;
+  height: 20px;
+  background-color: blue;
 }
 
 footer {
   margin: 0;
   text-align: center;
-  border: 1px solid black;
 }
