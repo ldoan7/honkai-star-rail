@@ -23,7 +23,6 @@ body {
   display: flex;
   flex-direction: column;
   flex: 1 0 auto;
-  /* border: 1px solid black; */
 }
 
 #nav-bar {
@@ -49,7 +48,6 @@ body {
   display: block;
   padding: 10px;
   text-decoration: none;
-  /* border: 1px solid black; */
 }
 
 #nav-items a:hover {
@@ -116,7 +114,6 @@ body {
 .menu-title {
   margin: 0;
   height: 100%;
-  /* border: 1px solid white; */
 }
 
 footer {

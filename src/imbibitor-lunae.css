@@ -60,6 +60,8 @@ body {
   flex-direction: column;
   flex: 1 0 auto;
   margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 #title {
@@ -70,31 +72,76 @@ body {
 
 .character {
   display: flex;
-  border: 1px solid red;
+  gap: 50px;
 }
 
 .stats {
   width: 100%;
-  border: 1px solid black;
-}
-
-.stat-bars {
-  border: 1px solid white;
 }
 
 .hp, .atk, .def, .speed, .taunt {
   display: flex;
-  gap: 100px;
+  align-items: center;
 }
 
-.hp img, .atk img, .def img, .speed img, .taunt img {
-  flex: 0 1 80px;
+.hp img, .atk img, .def img, .speed img {
+  width: 40px;
+}
+
+.taunt-icon {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 40px;
+}
+
+.taunt img {
+  width: 30px;
+}
+
+.hp p, .atk p, .def p, .speed p, .taunt p {
+  flex: 0 1 100px;
 }
 
 .bar {
   width: 500px;
   height: 20px;
-  background-color: blue;
+  border: 1px solid rgb(170, 159, 127);
+  margin-right: 10px;
+}
+
+.progress-10 {
+  width: 10%;
+  height: 100%;
+  background-color: rgb(170, 159, 127);
+}
+
+.progress-50 {
+  width: 50%;
+  height: 100%;
+  background-color: rgb(170, 159, 127);
+}
+
+.progress-60 {
+  width: 60%;
+  height: 100%;
+  background-color: rgb(170, 159, 127);
+}
+
+.progress-70 {
+  width: 70%;
+  height: 100%;
+  background-color: rgb(170, 159, 127);
+}
+
+.progress-75 {
+  width: 75%;
+  height: 100%;
+  background-color: rgb(170, 159, 127);
+}
+
+.number {
+  text-align: right;
 }
 
 footer {
