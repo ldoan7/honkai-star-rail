@@ -75,6 +75,12 @@ body {
   gap: 50px;
 }
 
+@media screen and (max-width: 712px) {
+  .character {
+    flex-direction: column;
+  }
+}
+
 .stats {
   width: 100%;
 }
@@ -84,30 +90,22 @@ body {
   align-items: center;
 }
 
-.hp img, .atk img, .def img, .speed img {
-  width: 40px;
-}
-
-.taunt-icon {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  width: 40px;
+.hp img, .atk img, .def img, .speed img, .taunt img {
+  width: 3em;
 }
 
 .taunt img {
-  width: 30px;
+  transform: scale(.7);
 }
 
-.hp p, .atk p, .def p, .speed p, .taunt p {
+.stat-label {
   flex: 0 1 100px;
 }
 
 .bar {
-  width: 500px;
+  width: 100%;
   height: 20px;
   border: 1px solid rgb(170, 159, 127);
-  margin-right: 10px;
 }
 
 .progress-10 {
@@ -141,6 +139,7 @@ body {
 }
 
 .number {
+  flex: 0 1 100px;
   text-align: right;
 }
 
