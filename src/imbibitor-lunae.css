@@ -78,6 +78,11 @@ body {
 @media screen and (max-width: 712px) {
   .character {
     flex-direction: column;
+    align-items: center;
+  }
+
+  .character img {
+    width: 60%;
   }
 }
 
