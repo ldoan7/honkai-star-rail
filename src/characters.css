@@ -55,6 +55,10 @@ body {
   transition: background-color 75ms ease-in;
 }
 
+.active-page {
+  background-color: #5a5c8d;
+}
+
 #main {
   display: flex;
   flex-direction: column;
